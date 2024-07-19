@@ -1,18 +1,18 @@
-def greet(name):
-    message="hello"
-    print(f"{message} {name}!")
+import unittest
 
-greet("menna")
+def add(x, y):
+  """Returns the sum of two numbers."""
+  return x + y
 
-def rec(length, width):
-    area = length * width
-    return area
-print(rec(5,10))
+class TestAdd(unittest.TestCase):
 
-def check(num):
-    if num % 2 == 0:
-        print("number is even.")
-    else:
-        print("number is odd.")
+  def test_add_positive(self):
+    result = add(5, 3)
+    self.assertEqual(result, 8)
 
-check(2)
+  def test_add_negative(self):
+    result = add(-2, 7)
+    self.assertEqual(result, 5)
+
+if __name__ == "__main__":
+  unittest.main()
