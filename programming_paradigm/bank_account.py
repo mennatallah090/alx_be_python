@@ -4,7 +4,7 @@ class BankAccount:
 
     def deposit(self, amount):
         self.account_balance += amount
-        print(f"Deposited ${amount:.2f}. New balance: ${self.account_balance:.2f}")
+        print(f"Deposited: ${amount:.2f}")
 
     def withdraw(self, amount):
         if amount > self.account_balance:
