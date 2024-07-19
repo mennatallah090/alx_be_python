@@ -12,10 +12,8 @@ class BankAccount:
             return False
         else:
             self.account_balance -= amount
-            print(
-                f"Withdrew: ${amount:.1f}. New balance: ${self.account_balance:.1f}")  # Display amount and balance with one decimal place
+            print(f"Withdrew: ${amount:.1f}")
             return True
 
     def display_balance(self):
-        # print(f"Your current balance is: ${self.account_balance}")
-        print(f"Current Balance: ${self.account_balance:.2f}")  # Corrected line
+        print(f"Current Balance: ${self.account_balance:.2f}")
