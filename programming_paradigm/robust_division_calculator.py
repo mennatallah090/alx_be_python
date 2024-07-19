@@ -5,7 +5,7 @@ def safe_divide(numerator, denominator):
     except ZeroDivisionError as e:
         print(e)
     except ValueError as e:
-        print(e)
+        print("Error: Cannot divide by zero.")
     except Exception as e:
         print(e)
 
