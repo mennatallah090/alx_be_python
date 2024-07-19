@@ -11,4 +11,6 @@ def safe_divide(numerator, denominator):
         print(e)
         return None
     else:
-        return result
+        if result is not None:
+            print(f"The result of the division is {result}")
+        return None
